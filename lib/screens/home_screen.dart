@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../weeks/week1/week1_menu.dart';
 import '../weeks/week3/week3_menu.dart';
+import '../weeks/week4/week4_menu.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -27,6 +28,15 @@ class HomeScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => const Week3Menu()),
+                ),
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Tuần 4'),
+              onPressed: () => {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const Week4Menu()),
                 ),
               },
             ),
